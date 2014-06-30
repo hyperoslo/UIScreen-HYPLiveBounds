@@ -10,6 +10,6 @@
 
 @interface UIScreen (HYPLiveBounds)
 
-- (CGRect)liveBounds;
+- (CGRect)hyp_liveBounds;
 
 @end

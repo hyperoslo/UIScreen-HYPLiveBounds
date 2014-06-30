@@ -10,7 +10,7 @@
 
 @implementation UIScreen (HYPLiveBounds)
 
-- (CGRect)liveBounds
+- (CGRect)hyp_liveBounds
 {
     CGRect bounds = [self bounds];
     UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
