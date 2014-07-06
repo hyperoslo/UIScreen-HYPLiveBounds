@@ -11,6 +11,7 @@
 		BD88D2591968608800F5E5C5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD88D2581968608800F5E5C5 /* XCTest.framework */; };
 		BD88D2631968608800F5E5C5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = BD88D2611968608800F5E5C5 /* InfoPlist.strings */; };
 		BD88D2651968608800F5E5C5 /* UIScreen_HYPLiveBoundsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BD88D2641968608800F5E5C5 /* UIScreen_HYPLiveBoundsTests.m */; };
+		BDA9F64519692C1F002C7506 /* UIScreen+HYPLiveBounds.m in Sources */ = {isa = PBXBuildFile; fileRef = BD76AA8F196860E4001FCBEC /* UIScreen+HYPLiveBounds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -26,13 +27,13 @@
 /* Begin PBXFileReference section */
 		BD76AA8E196860E4001FCBEC /* UIScreen+HYPLiveBounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+HYPLiveBounds.h"; sourceTree = "<group>"; };
 		BD76AA8F196860E4001FCBEC /* UIScreen+HYPLiveBounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+HYPLiveBounds.m"; sourceTree = "<group>"; };
-		BD88D2511968607800F5E5C5 /* UIScreen-HYPLiveBounds.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "UIScreen-HYPLiveBounds.xctest"; path = "/Users/christofferwinterkvist/Library/Mobile Documents/iCloud/Developer/Cocoa Touch/UIScreen-HYPLiveBounds/build/Debug-iphoneos/UIScreen-HYPLiveBounds.xctest"; sourceTree = "<absolute>"; };
-		BD88D2561968608800F5E5C5 /* UIScreen-HYPLiveBoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "UIScreen-HYPLiveBoundsTests.xctest"; path = "/Users/christofferwinterkvist/Library/Mobile Documents/iCloud/Developer/Cocoa Touch/UIScreen-HYPLiveBounds/build/Debug-iphoneos/UIScreen-HYPLiveBoundsTests.xctest"; sourceTree = "<absolute>"; };
 		BD88D2581968608800F5E5C5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		BD88D2601968608800F5E5C5 /* UIScreen-HYPLiveBoundsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "UIScreen-HYPLiveBoundsTests-Info.plist"; sourceTree = "<group>"; };
 		BD88D2621968608800F5E5C5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		BD88D2641968608800F5E5C5 /* UIScreen_HYPLiveBoundsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIScreen_HYPLiveBoundsTests.m; sourceTree = "<group>"; };
 		BD88D2661968608800F5E5C5 /* UIScreen-HYPLiveBoundsTests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIScreen-HYPLiveBoundsTests-Prefix.pch"; sourceTree = "<group>"; };
+		BDA9F64319692BF5002C7506 /* UIScreen-HYPLiveBounds.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIScreen-HYPLiveBounds.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BDA9F64419692BF5002C7506 /* UIScreen-HYPLiveBoundsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "UIScreen-HYPLiveBoundsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +70,8 @@
 				BD76AA8D196860E4001FCBEC /* UIScreen-HYPLiveBounds */,
 				BD88D25E1968608800F5E5C5 /* UIScreen-HYPLiveBoundsTests */,
 				BD88D2571968608800F5E5C5 /* Frameworks */,
+				BDA9F64319692BF5002C7506 /* UIScreen-HYPLiveBounds.xctest */,
+				BDA9F64419692BF5002C7506 /* UIScreen-HYPLiveBoundsTests.xctest */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,7 +119,7 @@
 			);
 			name = "UIScreen-HYPLiveBounds";
 			productName = "UIScreen-HYPLiveBoundsTests";
-			productReference = BD88D2511968607800F5E5C5 /* UIScreen-HYPLiveBounds.xctest */;
+			productReference = BDA9F64319692BF5002C7506 /* UIScreen-HYPLiveBounds.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 		BD88D2551968608800F5E5C5 /* UIScreen-HYPLiveBoundsTests */ = {
@@ -134,7 +137,7 @@
 			);
 			name = "UIScreen-HYPLiveBoundsTests";
 			productName = "UIScreen-HYPLiveBoundsTests";
-			productReference = BD88D2561968608800F5E5C5 /* UIScreen-HYPLiveBoundsTests.xctest */;
+			productReference = BDA9F64419692BF5002C7506 /* UIScreen-HYPLiveBoundsTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -199,6 +202,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BDA9F64519692C1F002C7506 /* UIScreen+HYPLiveBounds.m in Sources */,
 				BD88D2651968608800F5E5C5 /* UIScreen_HYPLiveBoundsTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
