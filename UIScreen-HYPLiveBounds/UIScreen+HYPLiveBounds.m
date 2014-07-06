@@ -12,12 +12,13 @@
 
 - (CGRect)hyp_liveBounds
 {
+    [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
+    BOOL isPortrait = UIDeviceOrientationIsPortrait([UIDevice currentDevice].orientation);
     CGRect bounds = [self bounds];
-    UIInterfaceOrientation orientation = [[UIApplication sharedApplication] statusBarOrientation];
     CGFloat width  = bounds.size.width;
     CGFloat height = bounds.size.height;
 
-    if (orientation == UIInterfaceOrientationPortrait || orientation == UIInterfaceOrientationPortraitUpsideDown) {
+    if (isPortrait) {
         if (bounds.size.width > height) {
             width  = bounds.size.height;
             height = bounds.size.width;
@@ -31,6 +32,8 @@
 
     bounds.size.width  = width;
     bounds.size.height = height;
+
+    [[UIDevice currentDevice] endGeneratingDeviceOrientationNotifications];
 
     return bounds;
 }
