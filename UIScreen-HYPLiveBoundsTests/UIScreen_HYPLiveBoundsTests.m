@@ -7,6 +7,7 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "UIScreen+HYPLiveBounds.h"
 
 @interface UIScreen_HYPLiveBoundsTests : XCTestCase
 
@@ -26,9 +27,10 @@
     [super tearDown];
 }
 
-- (void)testExample
+- (void)testPortraitBounds
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    CGRect bounds = [[UIScreen mainScreen] hyp_liveBounds];
+    XCTAssertTrue(bounds.size.height > bounds.size.width, @"Current orientation is portrait");
 }
 
 @end
