@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = "UIScreen-HYPLiveBounds"
-  s.version = "1.2"
+  s.version = "1.3"
   s.summary = "Get bounding rectangle of screen based on current device orientation"
   s.description = <<-DESC
                    * Get bounding rectangle of screen based on current device orientation
