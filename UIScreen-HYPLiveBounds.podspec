@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
     :type => 'MIT',
     :file => 'LICENSE.md'
   }
-  s.author = { "Christoffer Winterkvist" => "christoffer@winterkvist.com" }
-  s.social_media_url = "http://twitter.com/zenangst"
+  s.author = { "Hyper Interaktiv" => "teknologi@hyper.no"" }
+  s.social_media_url = "https://twitter.com/hyperoslo/"
   s.platform = :ios, '6.0'
   s.source = {
     :git => 'https://github.com/hyperoslo/UIScreen-HYPLiveBounds.git',
