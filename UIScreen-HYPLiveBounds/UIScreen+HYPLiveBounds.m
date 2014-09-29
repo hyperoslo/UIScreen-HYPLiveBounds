@@ -8,16 +8,10 @@
 
 #import "UIScreen+HYPLiveBounds.h"
 
-#define SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(v)  ([[[UIDevice currentDevice] systemVersion] compare:v options:NSNumericSearch] != NSOrderedAscending)
-
 @implementation UIScreen (HYPLiveBounds)
 
 - (CGRect)hyp_liveBounds
 {
-    if (SYSTEM_VERSION_GREATER_THAN_OR_EQUAL_TO(@"8.0")) {
-        return [[UIScreen mainScreen] bounds];
-    }
-
     [[UIDevice currentDevice] beginGeneratingDeviceOrientationNotifications];
 
     UIDeviceOrientation orientation = [UIDevice currentDevice].orientation;
